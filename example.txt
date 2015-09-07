@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+use strict;
+use drac_api;
+
+my api_object=new drac_api;
+my $dracip="10.10.0.0";
+my $dracusername="user";
+my $dracpassword="pwd";
+my physical_disks=get_pdisks($dracip,$dracusername,$dracpassword);
